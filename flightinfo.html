@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Bookings</title>
+<style>
+body{
+	font-family: Arial;
+	font-style: Italic;
+	margin: 5px;
+	color:white;
+}
+input{
+	text-align: right;
+	border: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: White;
+	background-color: #DEB887;
+}
+select{
+	text-align: right;
+	border: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	color: White;
+	background-color: #DEB887;
+}
+</style>
+</head>
+<body background="banner-bg.jpg">
+<div style="padding-left: 30px;">
+<h1 style="color:black;"><center>Airline Reservation system</center></h1>
+<h3>Check Flight Information</h3>
+
+<input type="radio" name="one" value="yes" checked>One Way</input>
+<input type="radio" name="round" value="no">Round Trip</input>
+<form>
+<br>
+From:
+<input type="text" name="from"><br>
+<br>
+To:
+<input type="text" name="to"><br>
+<br>
+Departing:
+<input type="date" name="depart"><br>
+<br>
+Return:
+<input type="date" name="return"><br>
+Select One:
+</form>
+<input type="radio" name="fixed" value="fixed" checked>Fixed dates</input>
+<input type="radio" name="flex" value="flexible">Flexible dates</input>
+<form>
+<br>
+Would you like to avail Domestic concession?
+</form>
+<input type="radio" name="yes" value="yes" checked>Yes</input>
+<input type="radio" name="no" value="no">No</input>
+<from>
+<br><br>
+<select>
+<option value="o1">Student</option>
+<option value="o2">Senior Citizen</option>
+<option value="o3">Armed Forces</option>
+<option value="o4">War Widow</option>
+<option value="o5">Reserve Engineer</option>
+<option value="o6">Bravery Awardee</option>
+<option value="o7">War Disabled Officer</option>
+</select><br>
+<br>
+Adults:
+<select>
+<option value="v1">1</option><br>
+<option value="v2">2</option><br>
+<option value="v3">3</option><br>
+</select><br>
+<br>
+Children:
+<select>
+<option value="v11">1</option><br>
+<option value="v22">2</option><br>
+<option value="v33">3</option><br>
+</select><br>
+<br>
+Infants:
+<select>
+<option value="vv1">1</option><br>
+<option value="vv2">2</option><br>
+<option value="vv3">3</option><br>
+</select><br>
+<br>
+Class:
+<select>
+<option value="oo1">Economy</option>
+<option value="oo2">Business</option>
+<option value="oo3">First</option>
+<option value="oo4">Business/Economy</option>
+<option value="oo5">First/Business</option>
+</select><br>
+<br>
+Promotion Code:
+<input type="text" name="code">
+<input type="button" name="b1" value="Book Now" onclick="alert('Your Ticket has been booked successfully!')">
+</form>
+</div>
+</body>
+</html>
